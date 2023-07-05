@@ -14,9 +14,9 @@ export const config: Options.Testrunner = {
   capabilities: [
     {
       browserName: "chrome", // or "firefox", "microsoftedge", "safari"
-      'goog:chromeOptions': {
-        args: ['--headless'],
-    },
+      "goog:chromeOptions": {
+        args: ["--headless"],
+      },
     },
   ],
   logLevel: "error",
@@ -32,7 +32,7 @@ export const config: Options.Testrunner = {
     [
       "allure",
       {
-        outputDir: 'cache/allure-results',
+        outputDir: "cache/allure-results",
         disableWebdriverStepsReporting: true,
       },
     ],
