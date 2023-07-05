@@ -1,0 +1,32 @@
+{
+  "name": "wdiobug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wdio": "rm -rf ./cache/allure-results && wdio run ./wdio.conf.ts && npm run report",
+    "report": "allure generate --clean ./cache/allure-results -o ./cache/allure-report && allure open ./cache/allure-report --host 127.0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedoseevGIT/wdioBug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedoseevGIT/wdioBug/issues"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.11.2",
+    "@wdio/local-runner": "8.11.2",
+    "@wdio/mocha-framework": "8.11.0",
+    "@wdio/allure-reporter": "8.11.0",
+    "@wdio/spec-reporter": "8.11.2",
+    "allure-commandline": "2.23.0",
+    "chromedriver": "114.0.2",
+    "ts-node": "10.9.1",
+    "typescript": "5.1.6",
+    "wdio-chromedriver-service": "8.1.1"
+  },
+  "homepage": "https://github.com/fedoseevGIT/wdioBug#readme"
+}
