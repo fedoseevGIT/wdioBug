@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wdio": "rm -rf ./cache/allure-results && wdio run ./wdio.conf.ts && npm run report",
+    "wdio": "wdio run ./wdio.conf.ts",
+    "start": "rm -rf ./cache/allure-results && wdio run ./wdio.conf.ts && npm run report",
     "report": "allure generate --clean ./cache/allure-results -o ./cache/allure-report && allure open ./cache/allure-report --host 127.0.0.1"
   },
   "repository": {
